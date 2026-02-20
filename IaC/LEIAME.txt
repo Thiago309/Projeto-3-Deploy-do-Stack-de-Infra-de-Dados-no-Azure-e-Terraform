@@ -6,12 +6,12 @@
 
 # Execute o comando abaixo para criar a imagem Docker
 
-docker build -t terraform-image-azure:projeto3 .
+docker build -t terraform-img-azure:projeto3 .
 
 
 # Execute o comando abaixo para criar o container Docker
 
-docker run -dit --name projeto3 -v ./IaC:/iac terraform-image-azure:projeto3 /bin/bash
+docker run -dit --name projeto3 -v ./IaC:/iac terraform-img-azure:projeto3 /bin/bash
 
 NOTA: No Windows você deve substituir ./IaC pelo caminho completo da pasta, por exemplo: C:\DSA\Cap15\IaC
 
